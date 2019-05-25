@@ -1479,6 +1479,12 @@ a {
 }
 
 /* Colors */
+.w3-pumpkin,
+.w3-hover-pumpkin:hover {
+    color: #fff !important;
+    background-color: #e25822 !important
+}
+
 .w3-amber,
 .w3-hover-amber:hover {
     color: #000 !important;
