@@ -1,23 +1,37 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="css/estilo.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-</head>
-
-<body>
-    <div class="testimonial">
-        <div class="w3-panel">
-            <div class="w3-col quote s10">
-                <h2>
-                    <p>"Desde minha adolescência já atuava como voluntário de outras formas, como: recolher alimentos em portas de mercados para auxílio de sopas comunitárias. Isso me despertou senso de responsabilidade e consciência sobre ajudar o próximo.</p>
-                </h2>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+        <script src="/scripts/actions.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="w3-padding-small">
+            <div class="w3-container w3-center w3-padding-16">
+                <h1 class="w3-xxxlarge w3-text-dark-grey w3-margin-bottom sobre" style="text-shadow:1px 1px 0 #444"><b>Atualizações</b></h1>
+                <input class="w3-input w3-border w3-padding" type="text" placeholder="Filtre para resultados específicos" id="newsListFilter" onkeyup="findOnNewsList()">
+            </div>
+            <div class="w3-container">
+                <div class="w3-card w3-round-small w3-blue-grey" style="overflow: auto; max-height: 300px;">
+                    <ul class="w3-ul" id="newsList">
+                        <li class="w3-border-black"><b class="w3-text-amber">24/05 |</b> Plataforma G Suite e fluig Tasks: o que elas podem fazer pela sua produtividade?</li>
+                        <li class="w3-border-black"><b class="w3-text-amber">24/05 |</b> Feliz Dia da Toalha :)</li>
+                        <li class="w3-border-black"><b class="w3-text-amber">21/05 |</b> Está no ar a nova temporada do Código Aberto com o patrocínio do iDEXO. Ouça aqui!</li>
+                        <li class="w3-border-black"><b class="w3-text-amber">21/05 |</b> Unidade Belo Horizonte, escolha seu representante da gestão CIPA 2019/2020</li>
+                        <li class="w3-border-black"><b class="w3-text-amber">20/05 |</b> Unidade São Jose dos Pinhais, escolha seu representante na CIPA!</li>
+                        <li class="w3-border-black"><b class="w3-text-amber">17/05 |</b> Seja um brigadista de incêndio!</li>
+                        <li class="w3-border-black"><b class="w3-text-amber">15/05 |</b> Na sexta-feira, 24 de maio, tragam suas toalhas e... don't panic!</li>
+                        <li class="w3-border-black"><b class="w3-text-amber">13/05 |</b> Conheça os ganhadores do Game Google TOTVS</li>
+                        <li class="w3-border-black"><b class="w3-text-amber">13/05 |</b> Portfolio for JIRA: a nova ferramenta para gestão de demandas de desenvolvimento</li>
+                        <li class="w3-border-black"><b class="w3-text-amber">10/05 |</b> Confira o resumo do evento da divulgação de resultados do 1TRI 2019</li>
+                        <li class="w3-border-black"><b class="w3-text-amber">10/05 |</b> TOTVS e VTEX firmam joint-venture</li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-</body></html>
+    </body>
+</html>
