@@ -1469,20 +1469,13 @@ a {
 }
 
 .w3-button:hover {
-    color: #f0e68c !important;
-    background-color: #f0e68c !important
+    color: #fff !important;
+    background-color: #e25822 !important
 }
 
 /*.w3-transparent,.w3-hover-none:hover{background-color:transparent!important}*/
 .w3-hover-none:hover {
     box-shadow: none !important
-}
-
-/* Colors */
-.w3-pumpkin,
-.w3-hover-pumpkin:hover {
-    color: #fff !important;
-    background-color: #e25822 !important
 }
 
 .w3-amber,
