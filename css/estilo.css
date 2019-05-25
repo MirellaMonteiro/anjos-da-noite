@@ -1,0 +1,294 @@
+body {
+    background-color: white;
+    font-size: large;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.tituloanjos {
+    position: relative;
+    z-index: 0;
+}
+
+.navegacao {
+
+    font: 100%;
+    color: white;
+    background-color:#30415D;
+
+}
+
+#navegacaopad{
+    
+    padding-left: 50px;
+    height: 100%;
+    text-decoration: none;
+    
+   
+}
+
+#menu a:hover {
+    color:#30415D;
+}
+
+#demo {
+    margin:auto;
+    background-color:#30415D ; 
+    color: #FFFFFF;
+    display:fixed;
+    position: relative;
+    z-index: 3;
+}
+
+.anjos {
+    margin: auto;
+    color: white;
+}
+
+
+
+.redes {
+    padding-right: 4%;
+    letter-spacing: 3px;
+    background-color: #30415D;
+    font-size: x-large;
+    color: white;
+}
+
+.redes a:hover {
+    color: #e25822;
+}
+
+
+
+.mySlides {
+ display: none;
+  margin-top: auto;
+   
+}
+
+
+.home1 {
+      padding-right: 10%;
+    padding-left: 10%;
+    padding-bottom: 5%;
+    padding-top:5%;
+        color:#696969;
+}
+
+.atualizacao{
+   text-align: center;
+    background-color: #30415D;
+    color: white;
+}
+
+.sobre {
+    font-size: 50px;
+    color: #30415D; 
+    text-align: center;
+}
+
+
+.myquotes {
+    display: none;
+
+}
+
+
+.depogeral{
+    
+    color: #696969;
+
+}
+
+.depoimento {
+    padding-left: 30px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: white;
+    font-size: medium;
+    background-color: #e25822;
+}
+
+.quote{
+    font-size:small;
+   
+}
+
+.footer {
+  padding: 2%;
+    background-color: #30415D;
+    color: white;
+    text-align: center;
+}
+
+.face {
+    padding-right: 20%;
+    padding-left: 20%;
+    letter-spacing: 3px;
+    font-size: x-large;
+}
+
+
+.redessociais {
+    font-size: small;
+}
+
+.endereco{
+    text-decoration: none;
+    font-size: small;
+    
+}
+
+
+.trajetoria1{
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-bottom:5%;
+    padding-top:5%%;
+        color:#696969;
+    
+}
+.trajetoria2{
+    text-align: center;
+    color:#e25822;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    font-size: 50px;
+       
+}
+
+#traj{
+    padding-left: 22%;
+}
+
+.missao{
+    font-size: 40px;
+    color:#30415D; 
+    text-align: center;
+   
+}
+
+.historia{
+    font-size: 40px;
+    color:#30415D; 
+    text-align: center;
+}
+
+
+
+.galerias{
+    padding-left:10%;
+    padding-right:10%;
+    color: #696969;
+     padding-bottom:5%;
+    padding-top:5%;
+}
+
+.espacogaleria{
+    font-size: 50px;
+    color:#30415D; 
+    text-align: center;
+    padding-bottom:5%;
+    padding-top: 5%;
+}
+
+
+.espaco{
+    font-size: 40px;
+    color:#30415D; 
+    text-align: center;
+   
+    
+}
+
+
+.parcerias1{
+    padding-right:10%;
+    padding-left: 10%;
+    padding-bottom: 5%;
+    padding-top:5%;
+        color:#696969;
+}
+.parcerias2{
+     font-size: 50px;
+    color:#30415D; 
+    text-align: center;
+        
+   
+}
+
+.section{
+    padding-top: 2%;
+}
+
+.voluntariado{
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-bottom: 5%;
+    padding-top:5%;
+        color:#696969;
+}
+
+.sejavoluntario {
+    
+    font-size: 50px;
+    color:#e25822; 
+    text-align: center;
+}
+
+
+.voluntario3{
+   position: static;
+    
+}
+
+.voluntario3:hover
+{
+    cursor: pointer;
+    transform: translateY(-20px);
+    box-shadow: 4px 30px 16px 0px rgba (50, 50, 50, 0.45);
+    
+    
+}
+
+
+.titulos{
+    color: #e25822;
+}
+
+.voluntariosdepo{
+    padding-right: 1%;
+    padding-left: 1%;
+   
+}
+
+
+.parte{ 
+    font-size: 40px;
+    color:#30415D; 
+    text-align: center;
+}
+.doacoes{
+     padding-right: 10%;
+    padding-left: 10%;
+    padding-bottom: 5%;
+    padding-top:5%;
+        color:#696969;
+}
+
+.titulos2{
+    color: #30415D;
+}
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
