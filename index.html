@@ -1,461 +1,375 @@
 <!DOCTYPE html>
+<!-- BEGIN: HTML TOTAL -->
 <html>
-
-<title>Anjos da Noite</title>
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/w3.css">
-    <link rel="stylesheet" href="css/estilo.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <script src="/scripts/actions.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-
-    <script>
-        $(function () {
-            // essa linha cria um id para uma página
-            $("#redes").load("sessions/redes.html");
-            $("#rodape").load("sessions/rodape.html");
-            $("#navegacao").load("sessions/navegacao.html");
-            $("#depoimento").load("sessions/depoimento.html");
-            $("#trajetoria").load("sessions/trajetoria.html");
-            $("#galeria").load("sessions/galeria.html");
-            $("#parcerias").load("sessions/parcerias.html");
-            $("#espacogaleria").load("sessions/espacogaleria.html");
-            $("#slideshow").load("sessions/slideshow.html");
-            $("#atualizacoes").load("sessions/atualizacoes.html");
-        });
-    </script>
-
-    <style>
-        .mySlides {
-            display: none;
-        }
-    </style>
-
-</head>
-
-
-<body>
-    <!-- BEGIN: REDES SOCIAIS-->
-    <div class="redes">
-        <div class="w3-right-align">
-            <a href="https://www.facebook.com/onganjosdanoite"   target="_blank"><i class="fab fa-facebook-square" title="Facebook"></i></a>
-            <a href="https://www.instagram.com/anjosdanoite.ong" target="_blank"><i class="fab fa-instagram" title="Instagram"></i></a>
-            <a href="https://www.instagram.com/anjosdanoite.ong" target="_blank"><i class="fab fa-twitter" title="Twitter"></i></a>
-            <a href="#rodape"><i class="fa fa-envelope" style="font-size:24px" title="E-mail"></i></a>
-            <a href="#rodape"><i class="fa fa-phone-square" style="font-size:24px" title="Contato"></i></a>
+    <!-- BEGIN: CABEÇALHO -->
+    <head>
+        <title>Anjos da Noite</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/w3.css">
+        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+        <script src="/scripts/actions.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <!-- BEGIN: IMPORTAÇÃO DE ARQUIVOS -->
+        <script>
+            $(function () {
+                $("#redes").load("sessions/redes.html");
+                $("#rodape").load("sessions/rodape.html");
+                $("#navegacao").load("sessions/navegacao.html");
+                $("#depoimento").load("sessions/depoimento.html");
+                $("#trajetoria").load("sessions/trajetoria.html");
+                $("#galeria").load("sessions/galeria.html");
+                $("#parcerias").load("sessions/parcerias.html");
+                $("#espacogaleria").load("sessions/espacogaleria.html");
+                $("#slideshow").load("sessions/slideshow.html");
+                $("#atualizacoes").load("sessions/atualizacoes.html");
+            });
+        </script>
+        <!-- END: IMPORTAÇÃO DE ARQUIVOS -->
+    </head>
+    <!-- END: CABEÇALHO -->
+    <!-- BEGIN: CORPO DO SITE -->
+    <body>
+        <!-- BEGIN: REDES SOCIAIS-->
+        <div class="redes">
+            <div class="w3-right-align">
+                <a href="https://www.facebook.com/onganjosdanoite"   target="_blank"><i class="fab fa-facebook-square" title="Facebook"></i></a>
+                <a href="https://www.instagram.com/anjosdanoite.ong" target="_blank"><i class="fab fa-instagram" title="Instagram"></i></a>
+                <a href="https://www.instagram.com/anjosdanoite.ong" target="_blank"><i class="fab fa-twitter" title="Twitter"></i></a>
+                <a href="mailto:anjos@anjosdanoite.org.br" target="_top"><i class="fa fa-envelope" style="font-size:24px" title="E-mail"></i></a>
+                <a href="#rodape"><i class="fa fa-phone-square" style="font-size:24px" title="Contato"></i></a>
+            </div>
         </div>
-    </div>
-    <!-- END: REDES SOCIAIS -->
+        <!-- END: REDES SOCIAIS -->
+        <!-- BEGIN: MENU DE NAVEGAÇÃO -->
+        <div>
+            <!-- BEGIN: MENU MOBILE -->
+            <div class="w3-row navegacao" id="navegacaopad">
+                <!-- BEGIN: LOGOTIPO -->
+                <div class="w3-col" style="width:42%">
+                    <p><a href="index.html" class="w3-bar-item w3-button tituloanjos"><b class="anjos">ANJOS DA NOITE</b></a></p>
+                </div>
+                <!-- END: LOGOTIPO -->
+                <!-- BEGIN: COLAPSE MOBILE -->
+                <div class="w3-col" style="width:58%">
+                    <p>
+                        <a href="index.html" class="w3-pumpkin w3-bar-item w3-button w3-hide-small"><b>Home</b></a>
+                        <a href="/sessions/trajetoria.html" class="w3-bar-item w3-button w3-hide-small"><b>Trajetória</b></a>
+                        <a href="/sessions/sejaumvoluntario.html" class="w3-bar-item w3-button w3-hide-small"><b>Seja voluntário</b></a>
+                        <a href="/sessions/galeria.html" class="w3-bar-item w3-button w3-hide-small"><b>Galeria</b></a>
+                        <a href="/sessions/parcerias.html" class="w3-bar-item w3-button w3-hide-small"><b>Parcerias</b></a>
+                        <a href="/sessions/doacoes.html" class="w3-bar-item w3-button w3-hide-small"><b>Doações</b></a>
+                        <a href="javascript:void(0)" class="w3-bar-item w3-right w3-button w3-left w3-hide-large w3-hide-medium" onclick="mobileColapse()">&#9776;</a>
+                    </p>
+                </div>
+                <!-- END: COLAPSE MOBILE -->
+            </div>
+            <!-- END: MENU MOBILE -->
+            <!-- BEGIN: MENU BROWSER -->
+            <div id="mobile-colapse" class="w3-bar-block w3-center-align w3-hide w3-hide-large w3-hide-medium ">
+                <a href="/sessions/index.html" class="w3-bar-item w3-button">Home</a>
+                <a href="/sessions/trajetoria.html" class="w3-bar-item w3-button">Trajetória</a>
+                <a href="/sessions/sejaumvoluntario.html" class="w3-bar-item w3-button">Seja voluntário</a>
+                <a href="/sessions/galeria.html" class="w3-bar-item w3-button">Galeria</a>
+                <a href="/sessions/parcerias.html" class="w3-bar-item w3-button">Parcerias</a>
+                <a href="/sessions/doacoes.html" class="w3-bar-item w3-button">Doações</a>
+            </div>
+            <!-- END: MENU BROWSER -->
+        </div>
+        <!-- END: MENU DE NAVEGAÇÃO -->
+        <!-- BEGIN: SLIDESHOW PRINCIPAL -->
+        <div class="w3-content w3-display-container" style="max-width:2000%">
+            <div class="w3-display-container mySlides"><img src="imagens/capa11.jpg" style="width:100%"></div>
+            <div class="w3-display-container mySlides"><img src="imagens/capa14.jpg" style="width:100%"></div>
+            <div class="w3-display-container mySlides"><img src="imagens/capa17.jpg" style="width:100%"></div>
+        </div>
+        <!-- END: SLIDESHOW PRINCIPAL -->
+        <!-- BEGIN: SCRIPT SLIDESHOW PRINCIPAL -->
+        <script>
+            var myTopIndex = 0;
+            topCarousel();
 
+            function topCarousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
 
-    <!----menu-'--->
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
 
-    <div class="w3-row  navegacao" id="navegacaopad">
+                myTopIndex++;
 
-        <div class="w3-col" style="width:42%">
-            <p><a href="index.html" class="w3-bar-item w3-button tituloanjos"><b class="anjos">ANJOS DA NOITE</b></a>
+                if (myTopIndex > x.length) {
+                    myTopIndex = 1
+                }
+
+                x[myTopIndex - 1].style.display = "block";
+                setTimeout(topCarousel, 2000); // Change image every 2 seconds
+            }
+
+            function plusTopDivs(n) {
+                showTopDivs(myTopIndex += n);
+            }
+
+            function showTopDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+
+                if (n > x.length) {
+                    myTopIndex = 1
+                }
+
+                if (n < 1) {
+                    myTopIndex = x.length
+                }
+
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+
+                x[myTopIndex - 1].style.display = "block";
+            }
+        </script>
+        <!-- END: SCRIPT SLIDESHOW PRINCIPAL -->
+        <!-- BEGIN: HOME -->
+        <div class="home1">
+            <h1 class="sobre w3-animate-left"><b>SOBRE NÓS</b></h1>
+            <p class="w3-animate-right">
+                Composto por voluntários de todas as idades, o Núcleo Assistencial Anjos da Noite
+                presta assistência a pessoas em situação de rua desde 1989. Fundado por Kaká Ferreira
+                e José Amato, a organização doa além de carinho, roupas e alimentos, possibilitando o
+                resgate da autoestima dos necessitados, visando sua reintegração social.
             </p>
-        </div>
-        <div class="w3-col " style="width:58%">
-            <p> <a href="index.html" class="w3-pumpkin w3-bar-item w3-button w3-hide-small"><b>Home</b></a>
-                <a href="trajetoria.html" class="w3-bar-item w3-button w3-hide-small"><b>Trajetória</b></a>
-                <a href="sejaumvoluntario.html" class="w3-bar-item w3-button w3-hide-small"><b>Seja voluntário</b></a>
-                <a href="galeria.html" class="w3-bar-item w3-button w3-hide-small"><b>Galeria</b></a>
-                <a href="parcerias.html" class="w3-bar-item w3-button w3-hide-small"><b>Parcerias</b></a>
-                <a href="doacoes.html" class="w3-bar-item w3-button w3-hide-small"><b>Doações</b></a>
-                <a href="javascript:void(0)" class="w3-bar-item w3-right w3-button w3-left w3-hide-large w3-hide-medium"
-                    onclick="myFunction()">&#9776;</a></p>
-        </div>
-    </div>
-
-
-    <div id="demo" class="w3-bar-block w3-center-align w3-hide w3-hide-large w3-hide-medium ">
-        <a href="index.html" class="w3-bar-item w3-button">Home</a>
-        <a href="trajetoria.html" class="w3-bar-item w3-button">Trajetória</a>
-        <a href="sejaumvoluntario.html" class="w3-bar-item w3-button">Seja voluntário</a>
-        <a href="galeria.html" class="w3-bar-item w3-button">Galeria</a>
-        <a href="parcerias.html" class="w3-bar-item w3-button">Parcerias</a>
-        <a href="doacoes.html" class="w3-bar-item w3-button">Doações</a>
-    </div>
-
-    <!----scrip menu--->
-    <script>
-        function myFunction() {
-            var x = document.getElementById("demo");
-            if (x.className.indexOf("w3-show") == -1) {
-                x.className += " w3-show";
-            } else {
-                x.className = x.className.replace(" w3-show", "");
-            }
-        }
-    </script>
-
-
-    <!---- slideshow--->
-
-
-    <div class="w3-content w3-display-container " style="max-width:2000%">
-
-
-
-        <div class="w3-display-container mySlides">
-            <img src="imagens/capa11.jpg" style="width:100%">
-
-        </div>
-
-        <div class="w3-display-container mySlides">
-            <img src="imagens/capa14.jpg" style="width:100%">
-
-        </div>
-
-        <div class="w3-display-container mySlides">
-            <img src="imagens/capa17.jpg" style="width:100%">
-
-        </div>
-
-    </div>
-
-
-
-
-
-
-    <!---- script slideshow--->
-
-
-    <script>
-        var myTopIndex = 0;
-        topCarousel();
-
-        function topCarousel() {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-
-            myTopIndex++;
-
-            if (myTopIndex > x.length) {
-                myTopIndex = 1
-            }
-
-            x[myTopIndex - 1].style.display = "block";
-            setTimeout(topCarousel, 2000); // Change image every 2 seconds
-        }
-
-        function plusTopDivs(n) {
-            showTopDivs(myTopIndex += n);
-        }
-
-        function showTopDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-
-            if (n > x.length) {
-                myTopIndex = 1
-            }
-
-            if (n < 1) {
-                myTopIndex = x.length
-            }
-
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-
-            x[myTopIndex - 1].style.display = "block";
-        }
-    </script>
-
-    <!-----home conteudo---->
-
-    <div class="home1">
-
-
-        <h1 class="sobre w3-animate-left"><B> SOBRE NÓS</B></h1>
-        <p class="w3-animate-right">Composto por voluntários de todas as idades, o Núcleo Assistencial Anjos da Noite
-            presta
-            assistência a pessoas em situação de rua desde 1989. Fundado por Kaká Ferreira e José
-            Amato, a organização doa além de carinho, roupas e alimentos, possibilitando o resgate da
-            autoestima dos necessitados, visando sua reintegração social.
-            <h3>
-                <p class="w3-animate-right">
-                    <center>Sempre teremos algo a oferecer e a receber.</center>
-                </p>
-            </h3>
-            <p class="w3-animate-right">A carência dos recursos materiais dessas pessoas não as tornam menos cidadãs.
-                Pois são
-                elas quem devem ter prioridade no senso de fraternidade que propicia momentos de
+            <h3><p class="w3-animate-right"><center>Sempre teremos algo a oferecer e a receber.</center></p></h3>
+            <p class="w3-animate-right">
+                A carência dos recursos materiais dessas pessoas não as tornam menos cidadãs.
+                Pois são elas quem devem ter prioridade no senso de fraternidade que propicia momentos de
                 reflexão sobre os valores da vida- hoje tão banalizada. Portanto, ser um Anjo da Noite nada
                 mais é do que agir na direção da solidariedade para a formação de um mundo mais justo e
                 feliz, razão pela qual a organização vivencia, entre outras, a seguinte premissa: todos os
-                problemas são problemas de todos.</p>
-
-    </div>
-
-    <!-- ATUALIZAÇÕES -->
-    <div class="w3-padding-small">
-        <div class="w3-container w3-center w3-padding-16">
-            <h1 class="w3-xxxlarge w3-text-dark-grey w3-margin-bottom sobre" style="text-shadow:1px 1px 0 #444"><b>ATUALIZAÇÕES</b></h1>
-            <input class="w3-input w3-border w3-padding" type="text" placeholder="Filtre para resultados específicos" id="newsListFilter" onkeyup="findOnNewsList()">
+                problemas são problemas de todos.
+            </p>
         </div>
-        <div class="w3-container">
-            <div class="w3-card w3-round-small w3-blue-grey" style="overflow: auto; max-height: 300px;">
-                <ul class="w3-ul" id="newsList">
-                    <li class="w3-border-black"><b class="w3-text-amber">24/03 |</b> Plataforma G Suite e Tasks: o que elas podem fazer pela sua produtividade?</li>
-                    <li class="w3-border-black"><b class="w3-text-amber">24/03 |</b> Feliz Dia da Toalha :)</li>
-                    <li class="w3-border-black"><b class="w3-text-amber">21/03 |</b> Está no ar a nova temporada do Código Aberto com o patrocínio do iDEXO. Ouça aqui!</li>
-                    <li class="w3-border-black"><b class="w3-text-amber">21/03 |</b> Unidade Belo Horizonte, escolha seu representante da gestão CIPA 2019/2020</li>
-                    <li class="w3-border-black"><b class="w3-text-amber">20/03 |</b> Unidade São Jose dos Pinhais, escolha seu representante na CIPA!</li>
-                    <li class="w3-border-black"><b class="w3-text-amber">17/03 |</b> Seja um brigadista de incêndio!</li>
-                    <li class="w3-border-black"><b class="w3-text-amber">15/03 |</b> Na sexta-feira, 24 de maio, tragam suas toalhas e... don't panic!</li>
-                    <li class="w3-border-black"><b class="w3-text-amber">13/03 |</b> Conheça os ganhadores do Game Google</li>
-                    <li class="w3-border-black"><b class="w3-text-amber">13/03 |</b> Portfolio for JIRA: a nova ferramenta para gestão de demandas de desenvolvimento</li>
-                    <li class="w3-border-black"><b class="w3-text-amber">10/03 |</b> Confira o resumo do evento da divulgação de resultados do 1TRI 2019</li>
-                    <li class="w3-border-black"><b class="w3-text-amber">10/03 |</b> VTEX firma joint-venture</li>
-                </ul>
+        <!-- END: HOME -->
+        <!-- BEGIN: ATUALIZAÇÕES -->
+        <div class="w3-padding-small">
+            <!-- BEGIN: FILTRO -->
+            <div class="w3-container w3-center w3-padding-16">
+                <h1 class="w3-xxxlarge w3-text-dark-grey w3-margin-bottom sobre" style="text-shadow:1px 1px 0 #444"><b>ATUALIZAÇÕES</b></h1>
+                <input class="w3-input w3-border w3-padding" type="text" placeholder="Filtre para resultados específicos" id="newsListFilter" onkeyup="findOnNewsList()">
             </div>
-        </div>
-    </div>
-
-    <!-- REMOVER ESSES BR FEIOSO -->
-    <br><br><br><br>
-
-    <!----- depoimentos---->
-    <div class="w3-container w3-card-4 depogeral">
-        <h3 class="depoimento">
-            <p><b>DEPOIMENTOS</b></p>
-        </h3>
-
-        <div class="testimonial">
-            <div class="w3-panel">
-                <div class="w3-col s2">
-                    <p><img src="imagens/voluntario2.png" alt="Avatar" class="w3-left" width="60%" height="60%">
-                    </p>
-                </div>
-                <div class="w3-col quote s10">
-                    <h5>
-                        <p><b>Kaká Ferreira</b></p>
-                    </h5>
-                    <p>Fundador</p>
-                    <p><i>"As coisas mais permanentes são as mudanças"
-                        </i></p>
+            <!-- END: FILTRO -->
+            <!-- BEGIN: GRID -->
+            <div class="w3-container">
+                <div class="w3-card w3-round-small w3-blue-grey" style="overflow: auto; max-height: 300px;">
+                    <ul class="w3-ul" id="newsList">
+                        <li class="w3-border-black"><b class="w3-text-amber">24/03 |</b> Plataforma G Suite e Tasks: o que elas podem fazer pela sua produtividade?</li>
+                        <li class="w3-border-black"><b class="w3-text-amber">24/03 |</b> Feliz Dia da Toalha :)</li>
+                        <li class="w3-border-black"><b class="w3-text-amber">21/03 |</b> Está no ar a nova temporada do Código Aberto com o patrocínio do iDEXO. Ouça aqui!</li>
+                        <li class="w3-border-black"><b class="w3-text-amber">21/03 |</b> Unidade Belo Horizonte, escolha seu representante da gestão CIPA 2019/2020</li>
+                        <li class="w3-border-black"><b class="w3-text-amber">20/03 |</b> Unidade São Jose dos Pinhais, escolha seu representante na CIPA!</li>
+                        <li class="w3-border-black"><b class="w3-text-amber">17/03 |</b> Seja um brigadista de incêndio!</li>
+                        <li class="w3-border-black"><b class="w3-text-amber">15/03 |</b> Na sexta-feira, 24 de maio, tragam suas toalhas e... don't panic!</li>
+                        <li class="w3-border-black"><b class="w3-text-amber">13/03 |</b> Conheça os ganhadores do Game Google</li>
+                        <li class="w3-border-black"><b class="w3-text-amber">13/03 |</b> Portfolio for JIRA: a nova ferramenta para gestão de demandas de desenvolvimento</li>
+                        <li class="w3-border-black"><b class="w3-text-amber">10/03 |</b> Confira o resumo do evento da divulgação de resultados do 1TRI 2019</li>
+                        <li class="w3-border-black"><b class="w3-text-amber">10/03 |</b> VTEX firma joint-venture</li>
+                    </ul>
                 </div>
             </div>
+            <!-- END: GRID -->
+            <!-- TODO: REMOVER ESSES BR FEIOSO -->
+            <br><br><br><br>
         </div>
-
-
-        <div class="testimonial">
-            <div class="w3-panel cor1">
-                <div class="w3-col s2">
-                    <p><img src="imagens/voluntario2.png" alt="Avatar" class="w3-left" width="60%" height="60%">
-                    </p>
-                </div>
-                <div class="w3-col quote s10">
-                    <h5>
-                        <p><b>Neusa Meire Fagali</b></p>
-                    </h5>
-                    <p>Membro do Conselho</p>
-                    <p><i>“É gratificante, me dá forças e quero voltar sempre. Pois crescemos e evoluímos como pessoa
-                            e espírito."</i></p>
+        <!-- END: ATUALIZAÇÕES -->
+        <!-- BEGIN:: DEPOIMENTOS -->
+        <div class="w3-container w3-card-4 depogeral">
+            <h3 class="depoimento"><p><b>DEPOIMENTOS</b></p></h3>
+            <!-- BEGIN: DEPOIMENTO #1 -->
+            <div class="testimonial">
+                <div class="w3-panel">
+                    <div class="w3-col s2">
+                        <p><img src="imagens/voluntario2.png" alt="Avatar" class="w3-left" width="60%" height="60%"></p>
+                    </div>
+                    <div class="w3-col quote s10">
+                        <h5><p><b>Kaká Ferreira</b></p></h5>
+                        <p>Fundador</p>
+                        <p><i>"As coisas mais permanentes são as mudanças."</i></p>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="testimonial">
-            <div class="w3-panel">
-                <div class="w3-col s2">
-                    <p><img src="imagens/voluntario2.png" alt="Avatar" class="w3-left" width="60%" height="60%">
-                    </p>
-                </div>
-                <div class="w3-col quote s10">
-                    <h5>
-                        <p><b>Junior Pereira</b></p>
-                    </h5>
-                    <p>Voluntário há 5 anos</p>
-                    <p><i>“É maravilhoso, você sempre quer fazer mais. É muito bom! O que vemos aqui é chocante,
-                            mas também gratificante.”</i></p>
+            <!-- END: DEPOIMENTO #1 -->
+            <!-- BEGIN: DEPOIMENTO #2 -->
+            <div class="testimonial">
+                <div class="w3-panel">
+                    <div class="w3-col s2">
+                        <p><img src="imagens/voluntario2.png" alt="Avatar" class="w3-left" width="60%" height="60%"></p>
+                    </div>
+                    <div class="w3-col quote s10">
+                        <h5><p><b>Neusa Meire Fagali</b></p></h5>
+                        <p>Membro do Conselho</p>
+                        <p><i>"É gratificante, me dá forças e quero voltar sempre. Pois crescemos e evoluímos como pessoa e espírito."</i></p>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="testimonial">
-            <div class="w3-panel">
-                <div class="w3-col s2">
-                    <p><img src="imagens/voluntario2.png" alt="Avatar" class="w3-left" width="60%" height="60%">
-                    </p>
-                </div>
-                <div class="w3-col quote s10">
-                    <h5>
-                        <p><b>Fabiana Bonil de Almeida</b></p>
-                    </h5>
-                    <p>Voluntária há 28 anos</p>
-                    <p><i>“Adoro fazer parte, adoro estar aqui para enxergar a realidade. É um aprendizado de vida”.</i>
-                    </p>
+            <!-- END: DEPOIMENTO #2 -->
+            <!-- BEGIN: DEPOIMENTO #3 -->
+            <div class="testimonial">
+                <div class="w3-panel">
+                    <div class="w3-col s2">
+                        <p><img src="imagens/voluntario2.png" alt="Avatar" class="w3-left" width="60%" height="60%"></p>
+                    </div>
+                    <div class="w3-col quote s10">
+                        <h5><p><b>Junior Pereira</b></p></h5>
+                        <p>Voluntário há 5 anos</p>
+                        <p><i>"É maravilhoso, você sempre quer fazer mais. É muito bom! O que vemos aqui é chocante, mas também gratificante."</i></p>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="testimonial">
-            <div class="w3-panel">
-                <div class="w3-col s2">
-                    <p><img src="imagens/voluntario2.png" alt="Avatar" class="w3-left" width="60%" height="60%">
-                    </p>
-                </div>
-                <div class="w3-col quote s10">
-                    <h5>
-                        <p><b>Claúdio Estor</b></p>
-                    </h5>
+            <!-- END: DEPOIMENTO #3 -->
+            <!-- BEGIN: DEPOIMENTO #4 -->
+            <div class="testimonial">
+                <div class="w3-panel">
+                    <div class="w3-col s2">
+                        <p><img src="imagens/voluntario2.png" alt="Avatar" class="w3-left" width="60%" height="60%"></p>
+                    </div>
+                    <div class="w3-col quote s10">
+                        <h5><p><b>Claúdio Estor</b></p></h5>
                     <p>Voluntário há 12 anos</p>
-                    <p><i>“Legal! Já fiz vários trabalhos porque é algo espontâneo e divertido. Me fez enxergar a vida
-                            de
-                            forma mais ampla e diferenciada. Vi que posso fazer a diferença”.</i></p>
+                    <p><i>"Legal! Já fiz vários trabalhos porque é algo espontâneo e divertido. Me fez enxergar a vida de forma mais ampla e diferenciada. Vi que posso fazer a diferença".</i></p>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="testimonial">
-            <div class="w3-panel">
-                <div class="w3-col s2">
-                    <p><img src="imagens/voluntario2.png" alt="Avatar" class="w3-left" width="60%" height="60%">
-                    </p>
-                </div>
-                <div class="w3-col quote s10">
-                    <h5>
-                        <p><b>Leandro Eduardo</b></p>
-                    </h5>
+            <!-- END: DEPOIMENTO #4 -->
+            <!-- BEGIN: DEPOIMENTO #5 -->
+            <div class="testimonial">
+                <div class="w3-panel">
+                    <div class="w3-col s2">
+                        <p><img src="imagens/voluntario2.png" alt="Avatar" class="w3-left" width="60%" height="60%"></p>
+                    </div>
+                    <div class="w3-col quote s10">
+                        <h5><p><b>Leandro Eduardo</b></p></h5>
                     <p>Voluntário há 11 anos</p>
-                    <p><i>“Fico sem palavras, pois não tem preço! É uma benção! Aprendi a ter um olhar empático”.</i>
-                    </p>
+                    <p><i>"Fico sem palavras, pois não tem preço! É uma benção! Aprendi a ter um olhar empático."</i></p>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="testimonial">
-            <div class="w3-panel">
-                <div class="w3-col s2">
-                    <p><img src="imagens/voluntario2.png" alt="Avatar" class="w3-left" width="60%" height="60%">
-                    </p>
-                </div>
-                <div class="w3-col quote s10">
-                    <h5>
-                        <p><b>André Luiz dos Santos</b></p>
-                    </h5>
+            <!-- END: DEPOIMENTO #5 -->
+            <!-- BEGIN: DEPOIMENTO #6 -->
+            <div class="testimonial">
+                <div class="w3-panel">
+                    <div class="w3-col s2">
+                        <p><img src="imagens/voluntario2.png" alt="Avatar" class="w3-left" width="60%" height="60%"></p>
+                    </div>
+                    <div class="w3-col quote s10">
+                        <h5><p><b>André Luiz dos Santos</b></p></h5>
                     <p>Voluntário há 7 meses</p>
-                    <p><i>“Gratificante! Ajudando o meu semelhante, ajudo a mim mesmo! A sensação é indescritível! E
-                            não admito a não caridade”.</i></p>
+                    <p><i>"Gratificante! Ajudando o meu semelhante, ajudo a mim mesmo! A sensação é indescritível! E não admito a não caridade."</i></p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="testimonial">
-            <div class="w3-panel">
-                <div class="w3-col s2">
-                    <p><img src="imagens/voluntario2.png" alt="Avatar" class="w3-left" width="60%" height="60%">
-                    </p>
-                </div>
-                <div class="w3-col quote s10">
-                    <h5>
-                        <p><b>Jairo Lins</b></p>
-                    </h5>
+            <!-- END: DEPOIMENTO #6 -->
+            <!-- BEGIN: DEPOIMENTO #7 -->
+            <div class="testimonial">
+                <div class="w3-panel">
+                    <div class="w3-col s2">
+                        <p><img src="imagens/voluntario2.png" alt="Avatar" class="w3-left" width="60%" height="60%"></p>
+                    </div>
+                    <div class="w3-col quote s10">
+                        <h5><p><b>Jairo Lins</b></p></h5>
                     <p>Voluntário</p>
-                    <p><i>“Tentar ajudar as pessoas de algum modo, acaba nos ajudando até mais do que o próximo.
-                            Saímos melhor do que entramos”.</i></p>
+                    <p><i>"Tentar ajudar as pessoas de algum modo, acaba nos ajudando até mais do que o próximo. Saímos melhor do que entramos."</i></p>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="testimonial">
-            <div class="w3-panel">
-                <div class="w3-col s2">
-                    <p><img src="imagens/voluntario2.png" alt="Avatar" class="w3-left" width="60%" height="60%">
-                    </p>
-                </div>
-                <div class="w3-col quote s10">
-                    <h5>
-                        <p><b>Julio Cesar </b></p>
-                    </h5>
+            <!-- END: DEPOIMENTO #7 -->
+            <!-- BEGIN: DEPOIMENTO #8 -->
+            <div class="testimonial">
+                <div class="w3-panel">
+                    <div class="w3-col s2">
+                        <p><img src="imagens/voluntario2.png" alt="Avatar" class="w3-left" width="60%" height="60%"></p>
+                    </div>
+                    <div class="w3-col quote s10">
+                        <h5><p><b>Julio Cesar</b></p></h5>
                     <p>Voluntário</p>
-                    <p><i>"Desde minha adolescência já atuava como voluntário de outras formas, como: recolher alimentos
-                            em portas de mercados para auxílio de sopas comunitárias. Isso me despertou senso de
-                            responsabilidade e consciência sobre ajudar o próximo. .</i></p>
+                    <p><i>"Desde minha adolescência já atuava como voluntário de outras formas, como: recolher alimentos em portas de mercados para auxílio de sopas comunitárias. Isso me despertou senso de responsabilidade e consciência sobre ajudar o próximo."</i></p>
+                    </div>
                 </div>
             </div>
+            <!-- END: DEPOIMENTO #8 -->
         </div>
-    </div>
+        <!-- END: SCRIPT SLIDESHOW DEPOIMENTOS -->
+        <script>
+            var slideIndex = 0;
+            carousel();
 
-    <!---script--->
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("testimonial");
 
-    <script>
-        var slideIndex = 0;
-        carousel();
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
 
-        function carousel() {
-            var i;
-            var x = document.getElementsByClassName("testimonial");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
+                slideIndex++;
+
+                if (slideIndex > x.length) {
+                    slideIndex = 1
+                }
+
+                x[slideIndex - 1].style.display = "block";
+                setTimeout(carousel, 4000);
             }
-            slideIndex++;
-            if (slideIndex > x.length) {
-                slideIndex = 1
+
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
             }
-            x[slideIndex - 1].style.display = "block";
-            setTimeout(carousel, 4000);
-        }
 
-        var slideIndex = 1;
-        showDivs(slideIndex);
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("testimonial");
 
-        function plusDivs(n) {
-            showDivs(slideIndex += n);
-        }
+                if (n > x.length) {
+                    slideIndex = 1
+                }
 
-        function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("testimonial");
-            if (n > x.length) {
-                slideIndex = 1
+                if (n < 1) {
+                    slideIndex = x.length
+                }
+
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+
+                x[slideIndex - 1].style.display = "block";
             }
-            if (n < 1) {
-                slideIndex = x.length
-            };
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            x[slideIndex - 1].style.display = "block";
-        }
-    </script>
+        </script>
+        <!-- END: SCRIPT SLIDESHOW DEPOIMENTOS -->
+        <!-- BEGIN: RODAPÉ -->
+        <div class="w3-row footer">
+            <!-- BEGIN: RODAPÉ SOCIAL-->
+            <div class="w3-col l12 s12 face" id="rodape">
+                <p class="redessociais">Redes Sociais</p>
 
-
-
-    <!-- rodape---->
-
-    <div class="w3-row footer">
-        <div class="w3-col  l12 s12  face" id="rodape">
-
-            <p class="redessociais">Redes Sociais</p>
-            <a href="https://www.facebook.com/onganjosdanoite/" tarhet="_blank"><i class="fab fa-facebook-square"
-                    title="Facebook"></i></a>
-            <a href="https://www.instagram.com/anjosdanoite.ong/"><i class="fab fa-instagram" title="Instagram"></i></a>
-            <a href="https://twitter.com/anjosdanoiteong"><i class="fab fa-twitter" title="Twitter"></i></a>
-            <a href="#rodape"><i class="fa fa-envelope" title="anjos@anjosdanoite.org.br"></i></a>
+                <a href="https://www.facebook.com/onganjosdanoite" target="_blank"><i class="fab fa-facebook-square" title="Facebook"></i></a>
+                <a href="https://www.instagram.com/anjosdanoite.ong"><i class="fab fa-instagram" title="Instagram"></i></a>
+                <a href="https://twitter.com/anjosdanoiteong"><i class="fab fa-twitter" title="Twitter"></i></a>
+                <a href="mailto:anjos@anjosdanoite.org.br" target="_top"><i class="fa fa-envelope" title="E-mail"></i></a>
+            </div>
+            <!-- END: RODAPÉ SOCIAL-->
+            <!-- BEGIN: ENDEREÇO -->
+            <div class="endereco">
+                <p>Anjos da Noite | Telefone: (11) 98160-8407| (011) 2280-4587 (somente aos sábados)| E-mail: anjos@anjosdanoite.org.br</p>
+                <p>Endereço: R. José Teixeira da Silva, 15 - Parque Paineiras, São Paulo - SP, 03694-140 © Anjos da Noite - Todos os direitos reservados.</p>
+            </div>
+            <!-- END: ENDEREÇO -->
         </div>
-
-        <div class="endereco">
-            <p>Anjos da Noite | Telefone: (11) 98160-8407| (011) 2280-4587 (somente aos sábados)| E-mail:
-                anjos@anjosdanoite.org.br</p>
-            <p>Endereço: R. José Teixeira da Silva, 15 - Parque Paineiras, São Paulo - SP, 03694-140
-                © Anjos da Noite - Todos os direitos reservados.</p>
-        </div>
-    </div>
-
-
-
-</body>
-
+        <!-- END: RODAPÉ -->
+    </body>
+    <!-- END: CORPO DO SITE -->
 </html>
+<!-- END: HTML TOTAL -->

@@ -1,4 +1,4 @@
-// Realiza o filtro da lista de atualizações
+// REALIZA O FILTRO DAS ATUALIZAÇÕES
 function findOnNewsList() {
     var input, filter, ul, li, a, i;
 
@@ -15,5 +15,16 @@ function findOnNewsList() {
         } else {
             li[i].style.display = "none";
         }
+    }
+}
+
+// REALIZA A COLAPSAGEM DO MENU MOBILE
+function mobileColapse() {
+    var x = document.getElementById("mobile-colapse");
+
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
     }
 }
